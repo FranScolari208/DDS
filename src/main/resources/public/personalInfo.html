@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->  
+  <!-- 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  -->  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+
+    <script>
+    $(function(){
+      $("#includedContent").load("navBar.html");
+    });
+    </script>
+  
+  <title>Miembro</title>
+</head>
+
+<body>
+  <div id="includedContent" class="container-fluid p-0"></div>
+  <div class="container mt-4 justify-content-center table-bordered rounded bg-secondary shadow-lg border-radius">
+    
+    <h1 class="text-center pt-4">Informacion personal</h1>
+    <div class="row">
+
+      <form class="col-8 m-4">
+
+        <div class="form-group row my-1">
+          <label for="text" class="col-5 col-form-label">Nombre</label>
+          <div class="col-7">
+            <div class="input-group">
+                <div class="input-group-text">
+                  <i class="fa fa-address-card"></i>
+                </div>
+              <input id="text" name="text" type="text" required="required" class="form-control">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group row my-1">
+          <label for="text" class="col-5 col-form-label">Apellido</label>
+          <div class="col-7">
+            <div class="input-group">
+                <div class="input-group-text">
+                  <i class="fa fa-address-card"></i>
+                </div>
+              <input id="text" name="text" type="text" required="required" class="form-control">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group row my-1">
+          <label for="text" class="col-5 col-form-label">Tipo de documento</label>
+          <div class="col-7">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">DNI</option>
+              <option value="2">PASAPORTE</option>
+              <option value="3">LC</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group row my-1">
+          <label for="text" class="col-5 col-form-label">Nro de documento</label>
+          <div class="col-7">
+            <div class="input-group">
+                <div class="input-group-text">
+                  <i class="fa fa-angle-right"></i>
+                </div>
+              <input id="text" name="text" type="text" required="required" class="form-control">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group row my-1">
+          <label for="text" class="col-5 col-form-label">Fecha de nacimiento</label>
+          <div class="col-7">
+            <div class="input-group">
+                <div class="input-group-text">
+                  <i class="fa fa-calendar"></i>
+                </div>
+              <input id="text" name="text" type="date" required="required" class="form-control">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group row my-1">
+          <label for="text" class="col-5 col-form-label">Email</label>
+          <div class="col-7">
+            <div class="input-group">
+                <div class="input-group-text">
+                  <i class="fa fa-inbox"></i>
+                </div>
+              <input id="text" name="text" type="email" required="required" class="form-control">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group row my-1">
+          <label for="text" class="col-5 col-form-label">Telefono</label>
+          <div class="col-7">
+            <div class="input-group">
+                <div class="input-group-text">
+                  <i class="fa fa-phone"></i>
+                </div>
+              <input id="text" name="text" type="tel" required="required" class="form-control">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group row my-1">
+          <label for="text" class="col-5 col-form-label">Formas de comunicación</label>
+          <div class="col-7">
+            <div class="form-check form-check-inline">
+              <input name="checkbox" id="checkbox_0" type="checkbox" class="form-check-input" value="Email">
+              <label for="checkbox_0" class="form-check-label">Email</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input name="checkbox" id="checkbox_1" type="checkbox" class="form-check-input" value="WhatsApp">
+              <label for="checkbox_1" class="form-check-label">WhatsApp</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input name="checkbox" id="checkbox_2" type="checkbox" class="form-check-input" value="Sms">
+              <label for="checkbox_2" class="form-check-label">Sms</label>
+            </div>
+          </div>
+          </div>
+      </form>
+        </div>
+
+        <div class="form-group row">
+          <div class="offset-5 col-7">
+            <button name="submit" type="submit" class="btn btn-primary mb-4 rounded-pill">Continuar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

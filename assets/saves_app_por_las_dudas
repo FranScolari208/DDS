@@ -1,0 +1,203 @@
+                // **********************HACEMOS LOS SAVES A LA BASE**************************
+
+                // // UBICACION
+                // repos.get(Ubicacion.class).save(lomasDeZamora);
+                // repos.get(Ubicacion.class).save(caballito);
+                // repos.get(Ubicacion.class).save(once);
+                // repos.get(Ubicacion.class).save(lanus);
+                // repos.get(Ubicacion.class).save(palermo);
+                // repos.get(Ubicacion.class).save(obelisco);
+                // repos.get(Ubicacion.class).save(canning);
+                // repos.get(Ubicacion.class).save(villaCrespo);
+                // repos.get(Ubicacion.class).save(paternal);
+                // repos.get(Ubicacion.class).save(flores);
+
+                // // TIPO ORGANIZACION
+                // repos.get(TipoOrganizacion.class).save(empresa);
+
+                // ACTIVIDAD
+                // repos.get(Actividad.class).save(mineria);
+                // repos.get(Actividad.class).save(nuclear);
+
+                // PARADA
+                // repos.get(Parada.class).save(paradaLomas);
+                // repos.get(Parada.class).save(paradaCanning);
+                // repos.get(Parada.class).save(paradaPalermo);
+                // repos.get(Parada.class).save(paradaObelisco);
+                // repos.get(Parada.class).save(paradaLanus);
+                // repos.get(Parada.class).save(paradaPalermo2);
+                // repos.get(Parada.class).save(paradaVillaCrespo);
+                // repos.get(Parada.class).save(paradaCaballito);
+                // repos.get(Parada.class).save(paradaPaternal);
+                // repos.get(Parada.class).save(paradaFlores);
+
+                // // TIPO TRANSPORTE
+                // repos.get(TipoTransporte.class).save(colectivo);
+                // repos.get(TipoTransporte.class).save(auto);
+                // repos.get(TipoTransporte.class).save(bicicleta);
+                // repos.get(TipoTransporte.class).save(aPie);
+
+                // // TRANSPORTE ECOLOGICO
+                // repos.get(TransporteEcologico.class).save(bici);
+                // repos.get(TransporteEcologico.class).save(caminando);
+                //
+                // // TRANSPORTE PUBLICO
+                // repos.get(TransportePublico.class).save(colectivo107);
+                // repos.get(TransportePublico.class).save(colectivo145);
+                //
+                // // TRANSPORTE PARTICULAR
+                // repos.get(TransporteParticular.class).save(ferrari);
+                // repos.get(TransporteParticular.class).save(fiat600);
+
+                // TRAMO
+                // repos.get(Tramo.class).save(tramoMaxi);
+                // repos.get(Tramo.class).save(tramoCeci);
+                // repos.get(Tramo.class).save(tramoBondi145);
+                // repos.get(Tramo.class).save(tramoFran2);
+                // repos.get(Tramo.class).save(tramoFiat1);
+                // repos.get(Tramo.class).save(tramoFiat2);
+                // repos.get(Tramo.class).save(tramoBondiYayi1);
+                // repos.get(Tramo.class).save(tramoBondiYayi2);
+
+                // TRAYECTO
+                // repos.get(Trayecto.class).save(trayectoMaxi);
+                // repos.get(Trayecto.class).save(trayectoCeci);
+                // repos.get(Trayecto.class).save(trayectoCompartido);
+                // repos.get(Trayecto.class).save(trayectoFranAPie);
+                // repos.get(Trayecto.class).save(trayectoYayiAuto);
+                // repos.get(Trayecto.class).save(trayectoYayiBondi1);
+                // repos.get(Trayecto.class).save(trayectoYayiBondi2);
+
+                // MIEMBRO
+                // repos.get(Miembro.class).save(julian);
+                // repos.get(Miembro.class).save(franco);
+                // repos.get(Miembro.class).save(maximiliano);
+                // repos.get(Miembro.class).save(yasmin);
+                // repos.get(Miembro.class).save(cecilia);
+                // repos.get(Miembro.class).save(diego);
+                // repos.get(Miembro.class).save(sabrina);
+                // repos.get(Miembro.class).save(juan);
+                // repos.get(Miembro.class).save(jorge);
+                // repos.get(Miembro.class).save(valentina);
+                // repos.get(Miembro.class).save(valeria);
+                // repos.get(Miembro.class).save(sofia);
+                // repos.get(Miembro.class).save(daniel);
+                // repos.get(Miembro.class).save(sebastian);
+                // repos.get(Miembro.class).save(dario);
+                // repos.get(Miembro.class).save(franca);
+                // repos.get(Miembro.class).save(sonia);
+                // repos.get(Miembro.class).save(martina);
+                // repos.get(Miembro.class).save(leonardo);
+                // repos.get(Miembro.class).save(carla);
+                // repos.get(Miembro.class).save(roberto);
+                // repos.get(Miembro.class).save(rodrigo);
+                // repos.get(Miembro.class).save(ezequiel);
+                // repos.get(Miembro.class).save(nicolas);
+                // repos.get(Miembro.class).save(erica);
+                // repos.get(Miembro.class).save(santiago);
+                // repos.get(Miembro.class).save(ramiro);
+
+                // ORGANIZACION
+                // repos.get(Organizacion.class).save(cocaCola);
+                // repos.get(Organizacion.class).save(apple);
+                // repos.get(Organizacion.class).save(nike);
+
+                // // SECTOR
+                // repos.get(Sector.class).save(marketingCocaCola);
+                // repos.get(Sector.class).save(tecnologiaCocaCola);
+                // repos.get(Sector.class).save(manufacturaCocaCola);
+                // repos.get(Sector.class).save(marketingApple);
+                // repos.get(Sector.class).save(tecnologiaApple);
+                // repos.get(Sector.class).save(manufacturaApple);
+                // repos.get(Sector.class).save(marketingNike);
+                // repos.get(Sector.class).save(tecnologiaNike);
+                // repos.get(Sector.class).save(manufacturaNike);
+
+                // MIEMBRO POR SECTOR
+
+                // repos.get(MiembroPorSector.class).save(danielMarketingNike);
+                // repos.get(MiembroPorSector.class).save(sofiaMarketingNike);
+                // repos.get(MiembroPorSector.class).save(valentinaMarketingNike);
+                // repos.get(MiembroPorSector.class).save(sabrinaTecnologiaNike);
+                // repos.get(MiembroPorSector.class).save(darioTecnologiaNike);
+                // repos.get(MiembroPorSector.class).save(francaTecnologiaNike);
+                // repos.get(MiembroPorSector.class).save(valeriaManufacturaNike);
+                // repos.get(MiembroPorSector.class).save(juanManufacturaNike);
+                // repos.get(MiembroPorSector.class).save(jorgeManufacturaNike);
+                // repos.get(MiembroPorSector.class).save(julianManufacturaNike);
+
+                // // UNIDAD
+                // repos.get(Unidad.class).save(unidadKWH);
+                // repos.get(Unidad.class).save(unidadKM);
+                // repos.get(Unidad.class).save(unidadKG);
+                // repos.get(Unidad.class).save(unidadTN);
+                //
+                // // FACTOR EMISION
+                // repos.get(FactorEmision.class).save(factorNuclear);
+                // repos.get(FactorEmision.class).save(factorMineria);
+                //
+                // // TIPO CONSUMO
+                // repos.get(TipoConsumo.class).save(tipoConsumo);
+                // repos.get(TipoConsumo.class).save(tipoConsumoMal);
+
+                // CONSUMO
+                // repos.get(Consumo.class).save(consumo);
+                // repos.get(Consumo.class).save(consumoMineria);
+                // repos.get(Consumo.class).save(consumoNuclear);
+
+                // PERIODO DE IMPUTACION
+                // repos.get(PeriodoDeImputacion.class).save(periodoEnero2022);
+                /*
+                 * Una organización tiene que tener cargados miembros y mediciones
+                 * dichas mediciones, al menos 20, tienen que tener al menos 3 tipos distintos
+                 * ya deben saber cual es la huella de carbono (poder explicar pq dio eso, algo
+                 * que ayuda es cuando en el reporte, aparece lo que se fue sumando)
+                 *
+                 * Tener un json/csv listo para cargar un batch de mediciones, para cargar por
+                 * API (tienen que saber cuanto es el resultado final)
+                 *
+                 * }@Test
+                 * public void persistirOrganizacion() {
+                 * TipoConsumo consumo2 = new TipoConsumo();
+                 * consumo2.setNombre("consumo2");
+                 *
+                 *
+                 * EntityManagerHelper.beginTransaction();
+                 * EntityManagerHelper.getEntityManager().persist(consumo2);
+                 * EntityManagerHelper.commit();
+                 * }
+                 *
+                 * https://docs.google.com/document/d/1mDBsPdjeaiIYBsk4g3EfoYdIkHdvqi3X/edit
+                 *
+                 *
+                 * Medicion medicion1 = new Medicion(actividad1, consumo1, periodo1); // -> kWh
+                 * * KGCO2EQ/kWh => KGCO2EQ
+                 * Medicion medicion2 = new Medicion(actividad2, consumo2, periodo1); // -> KG *
+                 * KGCO2EQ/KG => KGCO2EQ
+                 */
+
+                /*
+                 * repos.get(Unidad.class).multiSave(Arrays.asList(new Unidad[] { unidadKWH,
+                 * unidadKM, unidadKG, unidadTN }));
+                 *
+                 * repos.get(FactorEmision.class).save(factorUno);
+                 * repos.get(FactorEmision.class).save(factorDos);
+                 *
+                 *
+                 * repos.get(TipoConsumo.class).multiSave(Arrays.asList(new TipoConsumo[] {
+                 * otroTipoConsumo, tipoConsumo }));
+                 * repos.get(Actividad.class).save(combustionFija);
+                 *
+                 * repos.get(Unidad.class).multiSave(Arrays.asList(new Unidad[] { unidadKWH,
+                 * unidadKM, unidadKG, unidadTN }));
+                 *
+                 * repos.get(FactorEmision.class).save(factorUno);
+                 * repos.get(FactorEmision.class).save(factorDos);
+                 *
+                 *
+                 * repos.get(TipoConsumo.class).multiSave(Arrays.asList(new TipoConsumo[] {
+                 * otroTipoConsumo, tipoConsumo }));
+                 * repos.get(Actividad.class).save(combustionFija);
+                 */
+
+                // repos.get(TransporteParticular.class).save(ferrari);

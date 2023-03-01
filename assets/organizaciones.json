@@ -1,0 +1,73 @@
+{"Organizaciones":[  
+    {
+        "Razon Social":"Empresa coca cola",
+        "Tipo Organizacion": "The Coca-Cola Company es una corporación multinacional estadounidense de bebidas con sede en Atlanta, Georgia. The Coca-Cola Company tiene intereses en la fabricación, venta minorista y comercialización de concentrados y jarabes para bebidas no alcohólicas.",
+        "Ubicacion":{
+            "Direccion":"Atlanta, Georgia, Estados Unidos",
+            "Latitud":"20",
+            "Longitud":"20"
+
+        },
+        "Clasificacion":"CAPITAL_ABIERTO",
+        "Sectores":[
+            {
+                "Nombre":"Legales",
+                "Miembros":[
+                    {
+                    "Nombre":"Carlos",
+                    "Apellido":"Gardel",
+                    "Tipo DNI":"LIBRETA_CIVICA",
+                    "DNI":"1234567"
+
+                    },
+                    {
+                    "Nombre":"Raul",
+                    "Apellido":"Cascini",
+                    "Tipo DNI":"DNI",
+                    "DNI":"7891011"
+
+                    }
+                ]
+
+            }
+
+        ]
+
+        },
+        {
+        "Razon Social":"SAP",
+        
+        "Tipo Organizacion":"SAP, le brinda sus soluciones para gestionar desde PyMES hasta corporaciones.",
+        "Ubicacion":{
+            "Direccion":"Atlanta, Georgia, Estados Unidos",
+            "Latitud":"21",
+            "Longitud":"21"
+
+        },
+        "Clasificacion":"GUBERNAMENTAL",
+        "Sectores":[
+            {
+                "Nombre":"Legales",
+                "Miembros":[
+                    {
+                    "Nombre":"Carla",
+                    "Apellido":"Malba",
+                    "Tipo DNI":"DNI",
+                    "DNI":"12345679"
+
+                    },
+                    {
+                    "Nombre":"Raul",
+                    "Apellido":"Cascini",
+                    "Tipo DNI":"DNI",
+                    "DNI":"7891011"
+
+                    }
+                ]
+            }
+
+        ]
+
+    }
+]
+}

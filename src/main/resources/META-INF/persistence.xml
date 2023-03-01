@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+    http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+
+    <persistence-unit name="db" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <class></class>
+
+        <properties>
+            <property name="hibernate.archive.autodetection" value="class"/>
+            <property name="hibernate.event.merge.entity_copy_observer" value="allow"/>
+			<property name="hibernate.enable_lazy_load_no_trans" value="true"/>
+
+            <!-- <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/impacto_ambiental" />
+            <property name="hibernate.connection.username" value="root" />
+            <property name="hibernate.connection.password" value="root" /> -->
+
+
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver" />
+            <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5455/impacto_ambiental" />
+            <property name="hibernate.connection.username" value="root" />
+            <property name="hibernate.connection.password" value="1234567" />
+
+            <!-- <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+            <property name="hibernate.connection.username">root</property>
+            <property name="hibernate.connection.password">1234567</property>
+            <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/hibernatedb</property> -->
+
+
+            <!-- Lo que nos paso el profe por slack -->
+            <property name="hibernate.cache.use_second_level_cache" value="false"/>
+            <property name="hibernate.cache.use_query_cache" value="false"/>
+            <property name="hibernate.current_session_context_class" value="thread"/>
+            <property name="hibernate.flushMode" value="commit"/>
+            <property name="hibernate.connection.isolation" value="8"/>
+            <!-- Lo que nos paso el profe por slack -->
+
+            <property name="hibernate.show_sql" value="false" />
+            <!-- Enable the logging of all the generated SQL statements to the console -->
+
+            <property name="hibernate.format_sql" value="false" />
+            <!-- Format the generated SQL statement to make it more readable -->
+            <property name="use_sql_comments" value="true" />
+            <!-- Hibernate will put comments inside all generated SQL statements to hint what’s the generated SQL trying to do -->
+
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+            <!--
+                - validate: validate the schema, makes no changes to the database.
+                - update: update the schema.
+                - create: creates the schema, destroying previous data.
+                - create-drop: drop the schema when the SessionFactory is closed explicitly, typically when the application is stopped.
+                - none: does nothing with the schema, makes no changes to the database
+             -->
+        </properties>
+
+    </persistence-unit>
+
+</persistence>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Revisarport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+
+    <script>
+    $(function(){
+      $("#includedContent").load("/navBarOrg.html");
+    });
+    </script>
+
+    <title>Organizaciones</title>
+</head>
+
+<body>
+
+<div id="includedContent" class="container-fluid p-0"></div>
+<section>
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col">
+                <div class="card bg-secondary shadow-2-strong" style="border-radius: 1rem;">
+                    <div class="mb-md-2 mt-md-4 pb-1">
+                        <h2 class="fw-bold mb-2 text-center">Organizaciones</h2>
+                        <div class="container" style="border-radius: 1rem;">
+                            <div class="m-5">
+
+                                <div class="row container">
+
+                                <div class="container">
+                                    <div class="row row-cols-1 row-cols-md-2 g-2">
+                                        {{#each organizaciones}}
+                                        <div class="col-md col-sm-12">
+                                            <div class="card box-shadow">
+                                                <img class="card-img-top"
+                                                     style="height: 160px; width: 100%; display: block;"
+                                                     src="{{imagen}}"
+                                                     data-holder-rendered="true">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">{{razon_social}}</h5>
+                                                    <p class="card-text">{{clasificacion}}</p>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div class="btn-group">
+                                                            <a href="/organizaciones/{{id}}">
+                                                            <button type="button"
+                                                                    class="btn btn-sm btn-primary rounded-pill px-2 text-secondary">Detalle</button></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {{/each}}
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <nav aria-label="Page navigation example">
+                                                <ul class="pagination justify-content-center m-4">
+                                                    <li class="page-item"><a class="page-link" href="#">Anterior</a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link"
+                                                                             href="#">Siguiente</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

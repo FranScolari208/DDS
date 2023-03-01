@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"> </script>
+
+      <script>
+    $(function(){
+      $("#includedContent").load("/navBar.html");
+    });
+    </script>
+    <title>Registrar Trayecto</title>
+  </head>
+
+  <body>
+  <div id="includedContent" class="container-fluid p-0"></div>
+
+    <div class="container bg-secondary my-5 shadow-lg">
+
+      <div class="row">
+        <h1 class="h1 text-center">
+          Registrar Trayecto
+        </h1>
+
+        <form class="" action="/RegistrarTrayecto" object = "trayecto" method="post">
+          <div class="row">
+
+
+  
+          <div class="col-4 my-2">
+            <label for="eleccionTipoMascota" class="form-label">Compartido con:</label>
+            <select class="form-select" aria-label="tipoMascota" id="miembro" name="miembro" required>
+            <option value="0"selected >Seleccionar Miembro</option>
+
+                {{#each miembros}}
+                    <option value="{{id}}">{{nombre}} </option>
+                {{/each}}
+          </select>
+          </div>
+
+              <div class="col-4 my-2">
+                  <label for="eleccionTipoMascota" class="form-label">Ubicacion Salida</label>
+                  <select class="form-select" aria-label="tipoMascota" id="ubicacionsalida" name="ubicacionsalida">
+                      <option selected>Seleccionar Ubicacion</option>
+                      {{#each ubicaciones}}
+                          <option value="{{id}}">{{direccion}}</option>
+                      {{/each}}
+                  </select>
+              </div>
+              <div class="col-4 my-2">
+                  <label for="eleccionTipoMascota" class="form-label">Ubicacion Destino</label>
+                  <select class="form-select" aria-label="tipoMascota" id="ubicaciondestino" name="ubicaciondestino" required>
+                      <option selected>Seleccionar Ubicacion</option>
+                      {{#each ubicaciones}}
+                          <option value="{{id}}">{{direccion}}</option>
+                      {{/each}}
+                  </select>
+              </div>
+              <div class="col-4 my-2">
+                  <label for="eleccionTipoMascota" class="form-label">Medio de Transporte</label>
+                  <select class="form-select" aria-label="tipoMascota" id="tipotransporte" name="tipotransporte" required>
+                      <option selected>Seleccionar Transporte</option>
+                      {{#each mediosdetransporte}}
+                          <option value="{{id}}">{{descripcion}}</option>
+                      {{/each}}
+                  </select>
+              </div>
+
+              <div class="row justify-content-center d-flex">
+      <div class="col-2 my-2">
+      <button type="submit" name="agregar" class="btn btn-primary rounded-pill text-secondary" >Agregar</button>
+      </div>
+    </div>
+
+  </div>
+
+      </form>
+
+    </div>
+    </div>
+
+  </body>
+
+</html>

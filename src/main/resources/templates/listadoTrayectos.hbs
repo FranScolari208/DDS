@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="/css/estilos.css">
+       <style>
+        .thumnail-border {
+          border-width: 10px;
+          border-radius: 80%;
+        }
+        .smaller-image {
+          width: 1px;
+        }
+     </style>
+    <script
+                  src="https://code.jquery.com/jquery-3.6.0.min.js"
+                  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+                  crossorigin="anonymous"></script>
+
+          <script>
+        $(function(){
+          $("#includedContent").load("/navBar.html");
+        });
+        </script>
+    <title>Listado Trayecto</title>
+</head>
+
+<body>
+
+<div id="includedContent" class="container-fluid p-0"></div>
+    <div class="row flex-nowrap">
+
+        <div class="col-10 px-0">
+
+            <div class="container">
+                <div class="row px-0 my-3 mx-5">
+
+                    <div class="col-6">
+                        <h3>Mis Trayectos</h3>
+                    </div>
+
+                    <div class="col-6">
+                        <a href="/RegistrarTrayecto" class="btn btn-primary rounded-pill">Registrar Trayecto</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <table class="table table-secondary">
+
+                        <thead class="table-primary">
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th>Id</th>
+                            <th>Salida</th>
+                            <th>Llegada</th>
+                            <th>Medio de Transporte</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {{#each trayectos}}
+                            <tr>
+                                <th>
+                                    <a href="/RegistrarTramo/{{id}}" name="button" class=" btn btn-edit" ><i class="bi bi-plus-lg px-2 text-primary" ></i></a>
+                                    <a href="/EditarTrayecto/{{id}}" name="button" class=" btn btn-edit"><i class="bi bi-pencil-fill px-2 text-warning"></i></a>
+                                </th>
+                                <th>
+                                <td>{{id}}</td>
+                                <td>{{salida.direccion}}</td>
+                                <td>{{destino.direccion}}</td>
+                                <td>{{medioDeTransporte.descripcion}}</td>
+                            </tr>
+                        {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Login</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+          $("#includedContent").load("/navbarNoRegistrado.html");
+        });
+        </script>
+
+</head>
+<body>
+
+    <div id="includedContent" class="content flex-wrap"></div>
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card bg-secondary shadow-2-strong" style="border-radius: 1rem;">
+
+                    <div class="card-body px-5 py-2 text-center">
+                        <div class="mb-md-3 mt-md-4 pb-2">
+
+                            <h2 class="fw-bold mb-2">Iniciar Sesión</h2>
+                            <p class="text-50 mb-5">Ingrese su usuario y contraseña!</p>
+
+                             <form action="/login" method="post">
+                                <div class="form-outline mb-4">
+                                    <label for="emailUser" class="form-label">Email</label>
+                                    <input type="email" name="emailUser" id="emailUser" class="form-control form-control-lg">
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label for="passwordUser" class="form-label">Contraseña</label>
+                                    <input type="password" name="passwordUser" id="passwordUser" class="form-control form-control-lg">
+                                </div>
+
+
+                                <div class="form-check d-flex justify-content-start mb-4">
+                                    <input type="checkbox" name="checkRemember" id="checkRemember" class="form-check-input" value="">
+                                    <label for="checkRemember" class="form-check-label">Recordarme</label>
+                                </div>
+
+                                 <input type="submit" value="Iniciar Sesion" class="btn btn-lg btn-primary rounded-pill text-secondary px-5 mb-5"/>
+
+                             </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

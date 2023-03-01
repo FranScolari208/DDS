@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilos.css">
+
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+
+    <script>
+    $(function(){
+      $("#includedContent").load("/navBar.html");
+    });
+    </script>
+    <title>Registrar Tramo</title>
+</head>
+
+<body>
+<div id="includedContent" class="container-fluid p-0"></div>
+
+<div class="container bg-secondary my-5 shadow-lg">
+
+    <div class="row">
+        <h1 class="h1 text-center">
+            Registrar Tramo
+        </h1>
+
+        <form class="" object = "tramo" method="post"> {{!-- Agrego object tramo --}}
+
+            <div class="row">
+
+                <div class="col-4 my-2">
+                    <label for="Trayecto" class="form-label">Trayecto</label>
+                    <input type="text" class="form-control" value="{{trayecto.id}}" id="nombreTrayecto">
+                </div>
+                <div class="col-4 my-2">
+                    <label for="ubicacionactual" class="form-label">Ubicacion Actual</label>
+                    <select class="form-select" aria-label="ubicacionactual" id="eleccionubicacionactual" name="ubicacionactual"required>
+                        <option selected>Seleccionar Ubicacion</option>
+                        {{#each ubicaciones}}
+                            <option value="{{id}}">{{direccion}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+                <div class="col-4 my-2">
+                    <label for="eleccionUbicacionAnterior" class="form-label">Ubicacion Anterior</label>
+                    <select class="form-select" aria-label="ubicacionanterior" id="eleccionubicacionanterior" name="ubicacionanterior"required>
+                        <option selected>Seleccionar Ubicacion</option>
+                        {{#each ubicaciones}}
+                            <option value="{{id}}">{{direccion}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+                <div class="col-4 my-2">
+                    <label for="eleccionUbicacionProxima" class="form-label">Ubicacion Siguiente</label>
+                    <select class="form-select" aria-label="ubicacionproxima" id="eleccionubicacionproxima" name="ubicacionproxima" required>
+                        <option selected>Seleccionar Ubicacion</option>
+                        {{#each ubicaciones}}
+                            <option value="{{id}}">{{direccion}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+
+                <div class="row justify-content-center d-flex">
+                    <div class="col-2 my-2">
+                        <input type="submit" name="" class="btn btn-primary rounded-pill text-secondary" style="float:right;" value="Agregar">
+                    </div>
+
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+</body>
+
+</html>

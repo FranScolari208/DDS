@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Revisarport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+
+    <script>
+    $(function(){
+      $("#includedContent").load("/navBar.html");
+    });
+    </script>
+
+    <title>Organizaciones</title>
+</head>
+
+<body>
+
+<div id="includedContent" class="container-fluid p-0"></div>
+<section>
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col">
+                <div class="card bg-secondary shadow-2-strong" style="border-radius: 1rem;">
+                    <div class="mb-md-2 mt-md-4 pb-1">
+                        <h2 class="fw-bold mb-2 text-center">Organizaciones</h2>
+                        <div class="container" style="border-radius: 1rem;">
+                            <div class="m-5">
+
+                                <div class="row container">
+
+                                    <div class="col-3">
+                                        <select class="form-select form-select-sm mb-3"
+                                                aria-label=".form-select-lg example">
+                                            <option selected>Tipo Organizacion</option>
+                                            <option value="1">Ministerio</option>
+                                            <option value="2">Universidad</option>
+                                            <option value="3">Gubernamental</option>
+                                            <option value="4">Sector Primario</option>
+                                            <option value="5">Sector Secundario</option>
+                                            <option value="6">Capital Abierto</option>
+
+                                            </select>
+
+                                </div>
+
+                                <div class="container">
+
+                                    <div class="row row-cols-1 row-cols-md-2 g-2">
+
+                                        {{#each organizaciones}}
+                                        <div class="col-md col-sm-12">
+                                            <div class="card box-shadow">
+                                                <img class="card-img-top" alt="Thumbnail [100%x160]"
+                                                     style="height: 160px; width: 100%; display: block;"
+                                                     src= "{{imagen}}"
+                                                     data-holder-rendered="true">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">{{razon_social}}</h5>
+                                                    <p class="card-text">{{clasificacion}}</p>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div class="btn-group">
+                                                            <a href="/detalleOrganizacion/{{id}}">
+                                                            <button type="button"
+                                                                    class="btn btn-sm btn-primary rounded-pill px-2 text-secondary">Detalle</button></a>
+                                                        </div>
+                                                        <div class="btn-group">
+                                                            <a href="/actividad/{{id}}">
+                                                                <button type="button"
+                                                                        class="btn btn-sm btn-primary rounded-pill px-2 text-secondary">HC Actividad</button></a>
+                                                        </div>
+                                                        <div><a href="/porsector/{{id}}">
+                                                            <button type="button"
+                                                                    class="btn btn-sm btn-primary rounded-pill px-2 text-secondary">HC Por Sector</button></a>
+                                                    </div>
+                                                        <div><a href="/miembro/{{id}}">
+                                                            <button type="button"
+                                                                    class="btn btn-sm btn-primary rounded-pill px-2 text-secondary">HC Por Miembro</button></a>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        {{/each}}
+
+                                       <!-- <div class="col-md col-sm-12">
+                                            <div class="card box-shadow">
+                                                <img class="card-img-top" alt="Thumbnail [100%x160]"
+                                                     src="https://tendenciascreativas.com.ar/wp-content/uploads/2018/09/Logos-en-blanco-y-negro.jpg"
+                                                     data-holder-rendered="true"
+                                                     style="height: 160px; width: 100%; display: block;">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Organizacion Z</h5>
+                                                    <p class="card-text">Lorem Ipsum is simply dummy text of the
+                                                        printing and typesetting industry. Lorem Ipsum has been the
+                                                        industry's standard dummy text ever since the 1500s</p>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div class="btn-group">
+                                                            <button type="button"
+                                                                    class="btn btn-sm btn-primary rounded-pill px-2 text-secondary">Detalle</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md col-sm-12">
+                                            <div class="card box-shadow">
+                                                <img class="card-img-top" alt="Thumbnail [100%x160]"
+                                                     src="https://static-cse.canva.com/blob/211886/12-50-logotipos-que-te-inspiraran.png"
+                                                     data-holder-rendered="true"
+                                                     style="height: 160px; width: 100%; display: block;">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Organizacion A</h5>
+                                                    <p class="card-text">Lorem Ipsum is simply dummy text of the
+                                                        printing and typesetting industry. Lorem Ipsum has been the
+                                                        industry's standard dummy text ever since the 1500s</p>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div class="btn-group">
+                                                            <button type="button"
+                                                                    class="btn btn-sm btn-primary rounded-pill px-2 text-secondary">Detalle</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md col-sm-12">
+                                            <div class="card box-shadow">
+                                                <img class="card-img-top" alt="Thumbnail [100%x160]"
+                                                     src="data:image/png;base64,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"
+                                                     data-holder-rendered="true"
+                                                     style="height: 160px; width: 100%; display: block;">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Organizacion B</h5>
+                                                    <p class="card-text">Lorem Ipsum is simply dummy text of the
+                                                        printing and typesetting industry. Lorem Ipsum has been the
+                                                        industry's standard dummy text ever since the 1500s</p>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div class="btn-group">
+                                                            <button type="button"
+                                                                    class="btn btn-sm btn-primary rounded-pill px-2 text-secondary">Detalle</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md col-sm-12">
+                                            <div class="card box-shadow">
+                                                <img class="card-img-top" alt="Thumbnail [100%x160]"
+                                                     style="height: 160px; width: 100%; display: block;"
+                                                     src="https://media.istockphoto.com/vectors/icon-design-element-logo-for-technology-innovation-company-tech-icon-vector-id1201144331?k=20&m=1201144331&s=612x612&w=0&h=Hoc5gMOU0iPlfuw6zEEYCSB3gOtoz9GJLxrXuF8KEjY="
+                                                     data-holder-rendered="true">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Organizacion C</h5>
+                                                    <p class="card-text">Lorem Ipsum is simply dummy text of the
+                                                        printing and typesetting industry. Lorem Ipsum has been the
+                                                        industry's standard dummy text ever since the 1500s.</p>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div class="btn-group">
+                                                            <button type="button"
+                                                                    class="btn btn-sm btn-primary rounded-pill px-2 text-secondary">Detalle</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md col-sm-12">
+                                            <div class="card box-shadow">
+                                                <img class="card-img-top" alt="Thumbnail [100%x160]"
+                                                     src="https://static-cse.canva.com/blob/211878/07-50-logotipos-que-te-inspiraran.jpg"
+                                                     data-holder-rendered="true"
+                                                     style="height: 160px; width: 100%; display: block;">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Organizacion D</h5>
+                                                    <p class="card-text">Lorem Ipsum is simply dummy text of the
+                                                        printing and typesetting industry. Lorem Ipsum has been the
+                                                        industry's standard dummy text ever since the 1500s</p>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div class="btn-group">
+                                                            <button type="button"
+                                                                    class="btn btn-sm btn-primary rounded-pill px-2 text-secondary">Detalle</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> -->
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <nav aria-label="Page navigation example">
+                                                <ul class="pagination justify-content-center m-4">
+                                                    <li class="page-item"><a class="page-link" href="#">Anterior</a>
+                                                    </li>
+
+                                                    <li class="page-item"><a class="page-link"
+                                                                             href="#">Siguiente</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

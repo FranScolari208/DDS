@@ -1,0 +1,34 @@
+{
+  "transportes": [
+    {
+      "tipo": "publico",
+      "linea": "Linea 24",
+      "tipoVehiculo": "Colectivo",
+      "paradas":[
+        {"Lat":1.7555, "Lon": 2.7, "distProxima": 3, "distAnterior": 0},
+        {"Lat":2, "Lon": 3, "distProxima": 2, "distAnterior": 3},
+        {"Lat":3, "Lon": 4, "distProxima": 0, "distAnterior": 2}
+      ]
+    },
+    {
+      "tipo": "publico",
+      "linea": "Linea 124",
+      "tipoVehiculo": "Colectivo",
+      "paradas":[
+        {"Lat":19, "Lon": 19, "distProxima": 3, "distAnterior": 0},
+        {"Lat":20, "Lon": 20, "distProxima": 2, "distAnterior": 3},
+        {"Lat":21, "Lon": 21, "distProxima": 0, "distAnterior": 2},
+        {"Lat":22, "Lon": 22, "distProxima": 0, "distAnterior": 2}
+      ]
+    },
+    {
+      "tipo": "ecologico",
+      "tipoVehiculo": "Bicicleta"
+    },
+    {
+      "tipo": "particular",
+      "tipoVehiculo": "Auto",
+      "combustible": "NAFTA"
+    }
+  ]
+}

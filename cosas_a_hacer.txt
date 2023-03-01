@@ -1,0 +1,6 @@
+1) hacer repositorios de las clases que tengan relacion con muchos otros objetos = [
+    tipoOrganizacion??,
+]
+2) tipo vehiculo - tipo transporte y todas esas abstracciones de los medios de transporte (la voy a hacer en string ahora creo)
+
+
